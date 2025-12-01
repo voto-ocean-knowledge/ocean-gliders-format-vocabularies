@@ -1,6 +1,8 @@
 AD2CP_HEADING:
   comment: measured by AD2CP
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading}
+  standard_name: platform_orientation
+  units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
 AD2CP_PITCH:
   comment: measured by AD2CP
