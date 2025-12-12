@@ -145,7 +145,7 @@ PSAL:
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
-  units: 1e-3
+  units: 1
   valid_max: 40
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
