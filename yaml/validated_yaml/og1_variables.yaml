@@ -186,9 +186,9 @@ PSAL:
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
-  units: Dimensionless
-  valid_max: 40
-  valid_min: 0
+  units: 1
+  valid_max: 45
+  valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
 ROLL:
   _FillValue: NaNf
@@ -214,17 +214,16 @@ TEMP:
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
-TEMP_OXYGEN:
+TEMPDOXY:
   _FillValue: NaNf
-  comment: measured by oxygen optode
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
-  long_name: Temperature of the water body by CTD
+  long_name: Sea temperature from oxygen sensor ITS-90 scale
   observation_type: measured
   standard_name: sea_water_temperature
   units: Degrees Celsius
   valid_max: 42
   valid_min: -5
-  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMPDOXY/
 THETA:
   _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH

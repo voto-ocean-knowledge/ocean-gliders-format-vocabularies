@@ -14,14 +14,6 @@ RBR Coda T.ODO Temperature and Dissolved Oxygen Sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1717/
   sensor_type: dissolved gas sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
-Sea-Bird SBE 43F Dissolved Oxygen Sensor:
-  long_name: Sea-Bird SBE 43F
-  sensor_maker: Sea-Bird Scientific
-  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0013/
-  sensor_model: Sea-Bird SBE 43F Dissolved Oxygen Sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0037/
-  sensor_type: dissolved gas sensors
-  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/351/
 Sea-Bird Slocum Glider Payload {GPCTD} CTD:
   long_name: Sea-Bird Slocum CTD
   sensor_maker: Sea-Bird Scientific
@@ -30,12 +22,12 @@ Sea-Bird Slocum Glider Payload {GPCTD} CTD:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1492/
   sensor_type: CTD
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
-WET Labs {Sea-Bird WETLabs} ECO Triplet sensor:
+WET Labs {Sea-Bird WETLabs} ECO Puck Triplet sensor:
   long_name: WET Labs ECO-FLBBCE
   sensor_maker: WET Labs
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
-  sensor_model: WET Labs {Sea-Bird WETLabs} ECO Triplet sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0674/
+  sensor_model: WET Labs {Sea-Bird WETLabs} ECO Puck Triplet sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0673/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
 WET Labs {Sea-Bird WETLabs} SeaOWL UV-A Sea Oil-in-Water Locator:
