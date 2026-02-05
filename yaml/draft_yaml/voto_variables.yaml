@@ -77,7 +77,7 @@ DPAR:
   long_name: Downwelling photosynthetic available radiation
   observation_type: measured
   #standard_name: downwelling_radiance_in_sea_water #Not the same unit between OG1 and standard name
-  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
   units: MicroEinsteins per square metre per second
 ED380:
   average_method: geometric mean
@@ -85,14 +85,14 @@ ED380:
   observation_type: measured
   standard_name: 380nm_downwelling_irradiance
   units: W m-2 nm-1
-  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/ED380/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED380/
 ED490:
   average_method: geometric mean
   long_name: The vertical component of light at 490nm wavelength travelling downwards
   observation_type: measured
   standard_name: 490nm_downwelling_irradiance
   units: W m-2 nm-1
-  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/ED490/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
 EPSIFY01:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
@@ -171,14 +171,12 @@ PSAL:
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
-  units: Dimensionless
-  valid_max: 40
-  valid_min: 0
+  valid_max: 45
+  valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
 RBBP700:
   long_name: Raw signal from backscattering sensor.
   observation_type: observed
-  units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/RBBP700/
 ROLL:
   long_name: Orientation (roll angle) of measurement platform by inclinometer
@@ -198,15 +196,14 @@ TEMP:
   valid_max: 42
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
-TEMP_OXYGEN:
-  comment: measured by oxygen optode
-  long_name: Temperature of the water body by CTD
+TEMPDOXY:
+  long_name: Sea temperature from oxygen sensor ITS-90 scale
   observation_type: measured
   standard_name: sea_water_temperature
   units: Degrees Celsius
   valid_max: 42
   valid_min: -5
-  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMPDOXY/
 THETA:
   long_name: Potential temperature of the water body by computation using UNESCO 1983 algorithm.
   observation_type: calculated
