@@ -16,7 +16,6 @@ def validate_variable(var_name, variable):
     """
     Validate the metadata from a variables used in the OceanGliders format against the NERC vocab server. Steps:
     1. Assign mandatory coordinates "TIME, LONGITUDE, LATITUDE, DEPTH"
-    2. If _FillValue is not present, assign in the value NaNf
     3. Check that all mandatory attributes are present
     4. Check that the vocabulary URI is present in the OG1, P02 or P02 collections
     5. Check that the standard_name is present in the P07 CF standard names vocab
@@ -28,8 +27,6 @@ def validate_variable(var_name, variable):
     """
     if var_name not in ["TIME", "LONGITUDE", "LATITUDE", "DEPTH"]:
         variable['coordinates'] =  "TIME, LONGITUDE, LATITUDE, DEPTH"
-    if not '_FillValue' in variable.keys():
-        variable['_FillValue'] = 'NaNf'
     mandatory_keys = {'standard_name', 'vocabulary', 'units'}
     missing_keys =  mandatory_keys - set(variable.keys())
     if missing_keys:

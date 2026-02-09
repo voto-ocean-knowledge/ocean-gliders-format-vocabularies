@@ -1,5 +1,4 @@
 AD2CP_HEADING:
-  _FillValue: NaNf
   comment: measured by AD2CP
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform
@@ -8,7 +7,6 @@ AD2CP_HEADING:
   units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
 AD2CP_PITCH:
-  _FillValue: NaNf
   comment: measured by AD2CP
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (pitch) of measurement platform by inclinometer
@@ -16,7 +14,6 @@ AD2CP_PITCH:
   units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
 AD2CP_ROLL:
-  _FillValue: NaNf
   comment: measured by AD2CP
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (roll angle) of measurement platform by inclinometer
@@ -24,7 +21,6 @@ AD2CP_ROLL:
   units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
 AD2CP_TIME:
-  _FillValue: NaNf
   axis: T
   calendar: gregorian
   comment: measured by AD2CP
@@ -35,7 +31,6 @@ AD2CP_TIME:
   units: seconds since 1970-01-01 00:00:00 UTC
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
 BBP700:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Particle backscattering at 700 nanometers.
   observation_type: calculated
@@ -47,24 +42,21 @@ BBP700:
   units: m-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/BBP700/
 CDOM:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Concentration of coloured dissolved organic matter in sea water
   standard_name: concentration_of_colored_dissolved_organic_matter_in_sea_water_expressed_as_equivalent_mass_fraction_of_quinine_sulfate_dihydrate
   units: Parts per billion
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CDOM/
 CHLA:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
-  long_name: chlorophyll
+  long_name: Chlorophyll-A
   observation_type: calculated
   standard_name: concentration_of_chlorophyll_in_sea_water
-  units: kg m-3
+  units: mg m-3
   valid_max: 50
   valid_min: 0
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/CPWC/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CHLA/
 CNDC:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Electrical conductivity of the water body by CTD
   observation_type: measured
@@ -74,7 +66,6 @@ CNDC:
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
 DENSITY:
-  _FillValue: NaNf
   comment: raw, uncorrected salinity
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: The mass of a unit volume of any body of fresh or salt water
@@ -97,17 +88,31 @@ DEPTH:
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/
 DOXY:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
-  long_name: oxygen concentration
+  long_name: Dissolved oxygen
   observation_type: calculated
   standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
   units: mmol m-3
   valid_max: 425
   valid_min: 0
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DOXY/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DOXY/
+ED380:
+  average_method: geometric mean
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: The vertical component of light at 380nm wavelength travelling downwards
+  observation_type: measured
+  standard_name: downwelling_spherical_irradiance_in_sea_water
+  units: W m-2 nm-1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED380/
+ED490:
+  average_method: geometric mean
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: The vertical component of light at 490nm wavelength travelling downwards
+  observation_type: measured
+  standard_name: downwelling_spherical_irradiance_in_sea_water
+  units: W m-2 nm-1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
 HEADING:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform
     {heading} by compass
@@ -135,14 +140,12 @@ LONGITUDE:
   valid_min: -180.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LON/
 PITCH:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (pitch) of measurement platform by inclinometer
   standard_name: platform_pitch_fore_up
   units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
 POTDENS0:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Potential density of the water body by computation from salinity and
     theta using UNESCO algorithm with 0 decibar reference pressure
@@ -150,7 +153,6 @@ POTDENS0:
   units: kg m-3
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/POTDENS0/
 PRES:
-  _FillValue: NaNf
   comment: ctd pressure sensor
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Pressure (spatial coordinate) exerted by the water body by profiling
@@ -164,7 +166,6 @@ PRES:
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PRES_ADCP:
-  _FillValue: NaNf
   comment: adcp pressure sensor
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Pressure (spatial coordinate) exerted by the water body by profiling
@@ -178,11 +179,10 @@ PRES_ADCP:
   valid_min: 0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PSAL:
-  _FillValue: NaNf
   comment: Practical salinity of the water body by CTD and computation using UNESCO
     1983 algorithm
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
-  long_name: water salinity
+  long_name: Practical salinity
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
@@ -191,21 +191,18 @@ PSAL:
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
 ROLL:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (roll angle) of measurement platform by inclinometer
   standard_name: platform_roll_starboard_down
   units: Degrees
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
 TCPUCHLA:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
-  long_name: Turbidity of water in the water body
+  long_name: Thermistor signal from backscattering meter and/or fluorometer
   standard_name: sea_water_turbidity
   units: Dimensionless
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
 TEMP:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Temperature of the water body by CTD
   observation_type: measured
@@ -215,7 +212,6 @@ TEMP:
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
 TEMPDOXY:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Sea temperature from oxygen sensor ITS-90 scale
   observation_type: measured
@@ -225,7 +221,6 @@ TEMPDOXY:
   valid_min: -5
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMPDOXY/
 THETA:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Potential temperature of the water body by computation using UNESCO 1983
     algorithm.
@@ -248,7 +243,6 @@ TIME:
   valid_min: 1e9
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
 TURB:
-  _FillValue: NaNf
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Turbidity of water in the water body
   standard_name: sea_water_turbidity

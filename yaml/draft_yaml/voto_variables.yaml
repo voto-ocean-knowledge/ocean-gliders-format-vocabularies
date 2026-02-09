@@ -40,13 +40,13 @@ CDOM:
   units: Parts per billion
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CDOM/
 CHLA:
-  long_name: chlorophyll
+  long_name: Chlorophyll-A
   observation_type: calculated
   standard_name: concentration_of_chlorophyll_in_sea_water
-  units: kg m-3
+  units: mg m-3
   valid_max: 50
   valid_min: 0
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/CPWC/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CHLA/
 CNDC:
   long_name: Electrical conductivity of the water body by CTD
   observation_type: measured
@@ -66,13 +66,13 @@ DENSITY:
   valid_min: 1000
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DENSITY/
 DOXY:
-  long_name: oxygen concentration
+  long_name: Dissolved oxygen
   observation_type: calculated
   standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
   units: mmol m-3
   valid_max: 425
   valid_min: 0
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/DOXY/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DOXY/
 DPAR:
   long_name: Downwelling photosynthetic available radiation
   observation_type: measured
@@ -83,14 +83,14 @@ ED380:
   average_method: geometric mean
   long_name: The vertical component of light at 380nm wavelength travelling downwards
   observation_type: measured
-  standard_name: 380nm_downwelling_irradiance
+  standard_name: downwelling_spherical_irradiance_in_sea_water
   units: W m-2 nm-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED380/
 ED490:
   average_method: geometric mean
   long_name: The vertical component of light at 490nm wavelength travelling downwards
   observation_type: measured
-  standard_name: 490nm_downwelling_irradiance
+  standard_name: downwelling_spherical_irradiance_in_sea_water
   units: W m-2 nm-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
 EPSIFY01:
@@ -167,7 +167,7 @@ PRES_ADCP:
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PSAL:
   comment: Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm
-  long_name: water salinity
+  long_name: Practical salinity
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
@@ -176,16 +176,17 @@ PSAL:
   valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
 RBBP700:
-  long_name: Raw signal from backscattering sensor.
+  long_name: Raw signal from backscattering sensor at 700 nanometers
   observation_type: observed
-  vocabulary: http://vocab.nerc.ac.uk/collection/P02/current/RBBP700/
+  units: 1
+  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/RBBP700/
 ROLL:
   long_name: Orientation (roll angle) of measurement platform by inclinometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
   standard_name: platform_roll_starboard_down
   units: Degrees
 TCPUCHLA:
-  long_name: Turbidity of water in the water body
+  long_name: Thermistor signal from backscattering meter and/or fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
   units: Dimensionless
   standard_name: sea_water_turbidity
