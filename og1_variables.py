@@ -27,7 +27,7 @@ def validate_variable(var_name, variable):
     """
     if var_name not in ["TIME", "LONGITUDE", "LATITUDE", "DEPTH"]:
         variable['coordinates'] =  "TIME, LONGITUDE, LATITUDE, DEPTH"
-    mandatory_keys = {'standard_name', 'vocabulary', 'units'}
+    mandatory_keys = {'vocabulary', 'units'}
     missing_keys =  mandatory_keys - set(variable.keys())
     if missing_keys:
         _log.error(f"expected keys {missing_keys} not found in {var_name}")
@@ -41,19 +41,21 @@ def validate_variable(var_name, variable):
     if variable_uri not in og1_p01_p02.keys():
         _log.error(f"{var_name} URI {variable_uri} not found on NVS. Check URI or log request to add")
         return False
-    standard_name =  variable['standard_name']
-    if standard_name not in df_p07['cf_standard_name'].values:
-        _log.error(f'{var_name} standard name {standard_name} not found in P07')
-        return False
+    if 'standard_name' in variable.keys():
+        standard_name =  variable['standard_name']
+        if standard_name not in df_p07['cf_standard_name'].values:
+            _log.error(f'{var_name} standard name {standard_name} not found in P07')
+            return False
     concept = og1_p01_p02[variable_uri]
     if 'long_name' in variable.keys():
         if variable['long_name'] != concept['skos:prefLabel']['@value']:
             _log.warning(f"{var_name} long_name '{variable['long_name']}' does not match expected value from NVS '{concept['skos:prefLabel']['@value']}'")
     else:
         variable['long_name'] =  concept['skos:prefLabel']['@value']
+    return variable
     units_uri = df_p07.loc[df_p07['cf_standard_name']==standard_name, 'units_uri'].values[0]
     # Get units directly from the concept if they are linked
-    if  'skos:related' in concept.keys():
+    if 'skos:related' in concept.keys():
         related = concept['skos:related']
         if type(related) is dict:
             related = [related]
@@ -89,7 +91,7 @@ def validate_variables_from_yaml():
 
 if __name__ == '__main__':
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.ERROR,
         format="%(asctime)s %(levelname)-8s %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
         handlers=[
