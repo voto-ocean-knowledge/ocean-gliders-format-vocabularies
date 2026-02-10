@@ -53,8 +53,8 @@ CHLA:
   observation_type: calculated
   standard_name: concentration_of_chlorophyll_in_sea_water
   units: mg m-3
-  valid_max: 50
-  valid_min: 0
+  valid_max: 50.0
+  valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CHLA/
 CNDC:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -73,8 +73,8 @@ DENSITY:
   sources: salinity temperature pressure
   standard_name: sea_water_density
   units: kg m-3
-  valid_max: 1040
-  valid_min: 1000
+  valid_max: 1040.0
+  valid_min: 1000.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DENSITY/
 DEPTH:
   _FillValue: -9999.9
@@ -93,9 +93,15 @@ DOXY:
   observation_type: calculated
   standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
   units: mmol m-3
-  valid_max: 425
-  valid_min: 0
+  valid_max: 425.0
+  valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DOXY/
+DPAR:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Downwelling photosynthetic available radiation
+  observation_type: measured
+  units: MicroEinsteins per square metre per second
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
 ED380:
   average_method: geometric mean
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -112,6 +118,28 @@ ED490:
   standard_name: downwelling_spherical_irradiance_in_sea_water
   units: W m-2 nm-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
+EPSIFY01:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume
+    of the water body by turbulence profiler shear sensor
+  units: Watts per cubic metre
+  vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY01/
+EPSIFY02:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume
+    of the water body by turbulence profiler shear sensor
+  units: Watts per cubic metre
+  vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY02/
+FLUOCDOM:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Raw fluorescence from coloured dissolved organic matter sensor
+  units: Dimensionless
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCDOM/
+FLUOCHLA:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
+  units: Dimensionless
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
 HEADING:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform
@@ -139,6 +167,11 @@ LONGITUDE:
   valid_max: 180.0
   valid_min: -180.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LON/
+PHYCOCYANIN:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Phycocyanin concentration per unit volume of fresh or salt water.
+  units: mg m-3
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYCOCYANIN/
 PITCH:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (pitch) of measurement platform by inclinometer
@@ -162,8 +195,8 @@ PRES:
   reference_datum: sea-surface
   standard_name: sea_water_pressure
   units: dbar
-  valid_max: 2000
-  valid_min: 0
+  valid_max: 2000.0
+  valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PRES_ADCP:
   comment: adcp pressure sensor
@@ -175,8 +208,8 @@ PRES_ADCP:
   reference_datum: sea-surface
   standard_name: sea_water_pressure
   units: dbar
-  valid_max: 2000
-  valid_min: 0
+  valid_max: 2000.0
+  valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PSAL:
   comment: Practical salinity of the water body by CTD and computation using UNESCO
@@ -187,9 +220,15 @@ PSAL:
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
   units: 1
-  valid_max: 45
+  valid_max: 45.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
+RBBP700:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Raw signal from backscattering sensor at 700 nanometers
+  observation_type: observed
+  units: 1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/RBBP700/
 ROLL:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (roll angle) of measurement platform by inclinometer
@@ -208,8 +247,8 @@ TEMP:
   observation_type: measured
   standard_name: sea_water_temperature
   units: Degrees Celsius
-  valid_max: 42
-  valid_min: -5
+  valid_max: 42.0
+  valid_min: -5.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
 TEMPDOXY:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -217,8 +256,8 @@ TEMPDOXY:
   observation_type: measured
   standard_name: sea_water_temperature
   units: Degrees Celsius
-  valid_max: 42
-  valid_min: -5
+  valid_max: 42.0
+  valid_min: -5.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMPDOXY/
 THETA:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -228,8 +267,8 @@ THETA:
   sources: salinity temperature pressure
   standard_name: sea_water_potential_temperature
   units: Degrees Celsius
-  valid_max: 42
-  valid_min: -5
+  valid_max: 42.0
+  valid_min: -5.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
 TIME:
   _FillValue: 1.0
