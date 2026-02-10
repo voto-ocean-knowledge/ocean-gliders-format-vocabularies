@@ -44,8 +44,8 @@ CHLA:
   observation_type: calculated
   standard_name: concentration_of_chlorophyll_in_sea_water
   units: mg m-3
-  valid_max: 50
-  valid_min: 0
+  valid_max: 50.
+  valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CHLA/
 CNDC:
   long_name: Electrical conductivity of the water body by CTD
@@ -62,21 +62,20 @@ DENSITY:
   sources: salinity temperature pressure
   standard_name: sea_water_density
   units: kg m-3
-  valid_max: 1040
-  valid_min: 1000
+  valid_max: 1040.
+  valid_min: 1000.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DENSITY/
 DOXY:
   long_name: Dissolved oxygen
   observation_type: calculated
   standard_name: mole_concentration_of_dissolved_molecular_oxygen_in_sea_water
   units: mmol m-3
-  valid_max: 425
-  valid_min: 0
+  valid_max: 425.
+  valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DOXY/
 DPAR:
   long_name: Downwelling photosynthetic available radiation
   observation_type: measured
-  #standard_name: downwelling_radiance_in_sea_water #Not the same unit between OG1 and standard name
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
   units: MicroEinsteins per square metre per second
 ED380:
@@ -96,13 +95,11 @@ ED490:
 EPSIFY01:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
-  #standard_name: specific_turbulent_kinetic_energy_dissipation_in_sea_water #specific is per unit mass, here we have per wolume
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY01/
   units: Watts per cubic metre
 EPSIFY02:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
-  #standard_name: specific_turbulent_kinetic_energy_dissipation_in_sea_water #specific is per unit mass, here we have per wolume
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY02/
   units: Watts per cubic metre
 FLUOCDOM:
@@ -113,24 +110,16 @@ FLUOCDOM:
 FLUOCHLA:
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
-  #standard_name:
   units: Dimensionless
-#FLUOPHYC:
-#  long_name: Phycoerythrin signal from fluorescence sensor
-#  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOPHYC/
-#  units: Dimensionless
 HEADING:
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading} by compass
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
   standard_name: platform_orientation
   units: Degrees
-#PHYC:
-#  long_name: Phycoerythrin concentration per unit volume of fresh or salt water.
-#  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYC/
 PHYCOCYANIN:
   long_name: Phycocyanin concentration per unit volume of fresh or salt water.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYCOCYANIN/
-  unit: Nanograms per litre
+  units: mg m-3
 PITCH:
   long_name: Orientation (pitch) of measurement platform by inclinometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PITCH/
@@ -150,8 +139,8 @@ PRES:
   reference_datum: sea-surface
   standard_name: sea_water_pressure
   units: dbar
-  valid_max: 2000
-  valid_min: 0
+  valid_max: 2000.
+  valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PRES_ADCP:
   comment: adcp pressure sensor
@@ -162,8 +151,8 @@ PRES_ADCP:
   reference_datum: sea-surface
   standard_name: sea_water_pressure
   units: dbar
-  valid_max: 2000
-  valid_min: 0
+  valid_max: 2000.
+  valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
 PSAL:
   comment: Practical salinity of the water body by CTD and computation using UNESCO 1983 algorithm
@@ -172,14 +161,14 @@ PSAL:
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
   units: 1
-  valid_max: 45
+  valid_max: 45.
   valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
 RBBP700:
   long_name: Raw signal from backscattering sensor at 700 nanometers
   observation_type: observed
   units: 1
-  vocabulary: https://vocab.nerc.ac.uk/collection/OG1/current/RBBP700/
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/RBBP700/
 ROLL:
   long_name: Orientation (roll angle) of measurement platform by inclinometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ROLL/
@@ -195,16 +184,16 @@ TEMP:
   observation_type: measured
   standard_name: sea_water_temperature
   units: Degrees Celsius
-  valid_max: 42
-  valid_min: -5
+  valid_max: 42.
+  valid_min: -5.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMP/
 TEMPDOXY:
   long_name: Sea temperature from oxygen sensor ITS-90 scale
   observation_type: measured
   standard_name: sea_water_temperature
   units: Degrees Celsius
-  valid_max: 42
-  valid_min: -5
+  valid_max: 42.
+  valid_min: -5.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TEMPDOXY/
 THETA:
   long_name: Potential temperature of the water body by computation using UNESCO 1983 algorithm.
@@ -212,12 +201,21 @@ THETA:
   sources: salinity temperature pressure
   standard_name: sea_water_potential_temperature
   units: Degrees Celsius
-  valid_max: 42
-  valid_min: -5
+  valid_max: 42.
+  valid_min: -5.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
 TURB:
   long_name: Turbidity of water in the water body
   standard_name: sea_water_turbidity
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TURB/
   units: Dimensionless
-
+NAV_RESOURCE:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Navigation state of SeaExplorer glider
+  units: Dimensionless
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/NAV_RESOURCE/
+DIVE_NUMBER:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Sequential number representing a complete descent-ascent cycle of the glider
+  units: Dimensionless
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DIVE_NUMBER/
