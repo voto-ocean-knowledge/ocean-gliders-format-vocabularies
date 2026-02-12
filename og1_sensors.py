@@ -89,7 +89,7 @@ def validate_sensors_from_yaml():
         validated = validate_sensor(sensor)
         if validated:
             if validated["sensor_model_vocabulary"] not in og_sensors.keys():
-                print(validated["sensor_model_vocabulary"], sensor_name)
+                _log.warning(f'{validated["sensor_model_vocabulary"]}, {sensor_name} not found in OG_SENSORS collection')
             validated_sensors[validated['sensor_model']] = validated
     with open('yaml/validated_yaml/og1_sensors.yaml', 'w') as f:
         yaml.safe_dump(validated_sensors, f)

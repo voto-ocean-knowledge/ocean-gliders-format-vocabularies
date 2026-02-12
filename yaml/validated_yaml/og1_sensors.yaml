@@ -88,22 +88,24 @@ Sea-Bird Slocum Glider Payload {GPCTD} CTD:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1492/
   sensor_type: salinity sensor
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/350/
-WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor:
-  long_name: WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor
+WET Labs {Sea-Bird WETLabs} ECO Puck FLNTU-SLC fluorescence turbidity sensor:
+  long_name: WET Labs {Sea-Bird WETLabs} ECO Puck FLNTU-SLC fluorescence turbidity
+    sensor
   sensor_maker: WET Labs
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
-  sensor_model: WET Labs {Sea-Bird WETLabs} ECO FLBBCD scattering fluorescence sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1141/
+  sensor_model: WET Labs {Sea-Bird WETLabs} ECO Puck FLNTU-SLC fluorescence turbidity
+    sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2257/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-WET Labs {Sea-Bird WETLabs} ECO FLNTU combined fluorometer and turbidity sensor:
-  long_name: WET Labs {Sea-Bird WETLabs} ECO FLNTU combined fluorometer and turbidity
+WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC scattering fluorescence sensor:
+  long_name: WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC scattering fluorescence
     sensor
   sensor_maker: WET Labs
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0026/
-  sensor_model: WET Labs {Sea-Bird WETLabs} ECO FLNTU combined fluorometer and turbidity
-    sensor
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL0215/
+  sensor_model: WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC scattering
+    fluorescence sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1312/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
 WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBPC scattering fluorescence sensor:

@@ -78,7 +78,6 @@ DENSITY:
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DENSITY/
 DEPTH:
   _FillValue: -9999.9
-  ancillary_variables: DEPTH_QC
   interpolation_methodology: ''
   long_name: Depth below surface of the water body by unknown instrument and correction
     to zero at sea level using unspecified algorithm.
@@ -87,6 +86,12 @@ DEPTH:
   valid_max: 10000.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DEPTH/
+DIVE_NUMBER:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Sequential number representing a complete descent-ascent cycle of the
+    glider
+  units: '1'
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DIVE_NUMBER/
 DOXY:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Dissolved oxygen
@@ -100,7 +105,7 @@ DPAR:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Downwelling photosynthetic available radiation
   observation_type: measured
-  units: MicroEinsteins per square metre per second
+  units: microMoleQuanta m-2 s-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
 ED380:
   average_method: geometric mean
@@ -133,12 +138,12 @@ EPSIFY02:
 FLUOCDOM:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Raw fluorescence from coloured dissolved organic matter sensor
-  units: Dimensionless
+  units: 1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCDOM/
 FLUOCHLA:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
-  units: Dimensionless
+  units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
 HEADING:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -149,7 +154,6 @@ HEADING:
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
 LATITUDE:
   _FillValue: -9999.9
-  ancillary_variables: LATITUDE_QC
   interpolation_methodology: ''
   long_name: latitude of each measurement and GPS location
   standard_name: latitude
@@ -159,7 +163,6 @@ LATITUDE:
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LAT/
 LONGITUDE:
   _FillValue: -9999.9
-  ancillary_variables: LONGITUDE_QC
   interpolation_methodology: ''
   long_name: longitude of each measurement and GPS location
   standard_name: longitude
@@ -167,6 +170,11 @@ LONGITUDE:
   valid_max: 180.0
   valid_min: -180.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/LON/
+NAV_RESOURCE:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Navigation state of SeaExplorer glider
+  units: '1'
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/NAV_RESOURCE/
 PHYCOCYANIN:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Phycocyanin concentration per unit volume of fresh or salt water.
@@ -197,7 +205,7 @@ PRES:
   units: dbar
   valid_max: 2000.0
   valid_min: 0.0
-  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES/
 PRES_ADCP:
   comment: adcp pressure sensor
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -210,7 +218,7 @@ PRES_ADCP:
   units: dbar
   valid_max: 2000.0
   valid_min: 0.0
-  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PRES/
 PSAL:
   comment: Practical salinity of the water body by CTD and computation using UNESCO
     1983 algorithm
@@ -219,7 +227,7 @@ PSAL:
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
-  units: 1
+  units: '1'
   valid_max: 45.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
@@ -227,7 +235,7 @@ RBBP700:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Raw signal from backscattering sensor at 700 nanometers
   observation_type: observed
-  units: 1
+  units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/RBBP700/
 ROLL:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -239,7 +247,7 @@ TCPUCHLA:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Thermistor signal from backscattering meter and/or fluorometer
   standard_name: sea_water_turbidity
-  units: Dimensionless
+  units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
 TEMP:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
@@ -271,19 +279,18 @@ THETA:
   valid_min: -5.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/THETA/
 TIME:
-  _FillValue: 1.0
-  ancillary_variables: TIME_QC
+  _FillValue: 1
   calendar: gregorian
   interpolation_methodology: ''
   long_name: Time elapsed since 1970-01-01T00:00:00Z
   standard_name: time
   units: since 1970-01-01T00:00:00Z
-  valid_max: 4e9
-  valid_min: 1e9
+  valid_max: 4000000000
+  valid_min: 1000000000
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TIME/
 TURB:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Turbidity of water in the water body
   standard_name: sea_water_turbidity
-  units: Dimensionless
+  units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TURB/
