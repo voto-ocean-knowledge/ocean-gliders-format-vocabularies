@@ -33,20 +33,19 @@ def validate_variable(var_name, variable):
         _log.error(f"expected keys {missing_keys} not found in {var_name}")
         return False
 
-    variable_uri = variable['vocabulary']
-    if 'https:' in variable_uri:
-        variable_uri.replace('https:', 'http:')
-    if variable_uri[-1] != '/':
-        variable_uri += '/'
-    if variable_uri not in og1_p01_p02.keys():
-        _log.error(f"{var_name} URI {variable_uri} not found on NVS. Check URI or log request to add")
+    if 'https:' in variable['vocabulary']:
+        variable['vocabulary'].replace('https:', 'http:')
+    if variable['vocabulary'][-1] != '/':
+        variable['vocabulary'] += '/'
+    if variable['vocabulary'] not in og1_p01_p02.keys():
+        _log.error(f"{var_name} URI {variable['vocabulary']} not found on NVS. Check URI or log request to add")
         return False
     if 'standard_name' in variable.keys():
         standard_name =  variable['standard_name']
         if standard_name not in df_p07['cf_standard_name'].values:
             _log.error(f'{var_name} standard name {standard_name} not found in P07')
             return False
-    concept = og1_p01_p02[variable_uri]
+    concept = og1_p01_p02[variable['vocabulary']]
     if 'long_name' in variable.keys():
         if variable['long_name'] != concept['skos:prefLabel']['@value']:
             _log.warning(f"{var_name} long_name '{variable['long_name']}' does not match expected value from NVS '{concept['skos:prefLabel']['@value']}'")
@@ -85,13 +84,16 @@ def validate_variables_from_yaml():
             validated = validate_variable(var_name, variables)
             if validated:
                 validated_variables[var_name] = validated
+            elif var_name in ['NAV_RESOURCE', 'DIVE_NUMBER']:
+                validated_variables[var_name] = variables
+
     with open('yaml/validated_yaml/og1_variables.yaml', 'w') as f:
-        yaml.safe_dump(validated_variables, f)
+        yaml.safe_dump(validated_variables, f, allow_unicode=True)
     _log.info(f"COMPLETE check all variables, read {len(input_variables)} unique variables, wrote {len(validated_variables)} variables")
 
 if __name__ == '__main__':
     logging.basicConfig(
-        level=logging.ERROR,
+        level=logging.INFO,
         format="%(asctime)s %(levelname)-8s %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
         handlers=[

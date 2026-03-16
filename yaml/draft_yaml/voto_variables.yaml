@@ -77,7 +77,7 @@ DPAR:
   long_name: Downwelling photosynthetic available radiation
   observation_type: measured
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
-  units: MicroEinsteins per square metre per second
+  units: μE cm-2 s-1
 ED380:
   average_method: geometric mean
   long_name: The vertical component of light at 380nm wavelength travelling downwards
@@ -92,6 +92,14 @@ ED490:
   standard_name: downwelling_spherical_irradiance_in_sea_water
   units: W m-2 nm-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
+ED532:
+  average_method: geometric mean
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: The vertical component of light at 532nm wavelength travelling downwards
+  observation_type: measured
+  standard_name: downwelling_spherical_irradiance_in_sea_water
+  units: W m-2 nm-1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED532/
 EPSIFY01:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
@@ -102,20 +110,33 @@ EPSIFY02:
     shear sensor
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY02/
   units: Watts per cubic metre
+FDOM:
+  long_name: Concentration of coloured dissolved organic matter expressed as quinine sulphate equivalent (FDOM) in seawater
+  standard_name: concentration_of_colored_dissolved_organic_matter_in_sea_water_expressed_as_equivalent_mass_fraction_of_quinine_sulfate_dihydrate
+  units: Parts per billion
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FDOM/
 FLUOCDOM:
   long_name: Raw fluorescence from coloured dissolved organic matter sensor
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCDOM/
   #standard_name:
-  units: Dimensionless
+  units: 1
 FLUOCHLA:
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
-  units: Dimensionless
+  units: "1"
+FLUOPHYC:
+  long_name: Phycoerythrin signal from fluorescence sensor
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOPHYC/
+  units: "1"
 HEADING:
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading} by compass
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
   standard_name: platform_orientation
   units: Degrees
+PHYC:
+  long_name: Concentration of phycoerythrin by fluorometer
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYC/
+  units: mg m-3
 PHYCOCYANIN:
   long_name: Phycocyanin concentration per unit volume of fresh or salt water.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYCOCYANIN/
@@ -160,14 +181,14 @@ PSAL:
   observation_type: calculated
   sources: CNDC, TEMP, PRES
   standard_name: sea_water_practical_salinity
-  units: 1
+  units: "1"
   valid_max: 45.
   valid_min: 0.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PSAL/
 RBBP700:
   long_name: Raw signal from backscattering sensor at 700 nanometers
   observation_type: observed
-  units: 1
+  units: "1"
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/RBBP700/
 ROLL:
   long_name: Orientation (roll angle) of measurement platform by inclinometer
@@ -177,7 +198,7 @@ ROLL:
 TCPUCHLA:
   long_name: Thermistor signal from backscattering meter and/or fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TCPUCHLA/
-  units: Dimensionless
+  units: "1"
   standard_name: sea_water_turbidity
 TEMP:
   long_name: Temperature of the water body by CTD
@@ -208,14 +229,14 @@ TURB:
   long_name: Turbidity of water in the water body
   standard_name: sea_water_turbidity
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/TURB/
-  units: Dimensionless
+  units: "1"
 NAV_RESOURCE:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Navigation state of SeaExplorer glider
-  units: Dimensionless
+  units: "1"
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/NAV_RESOURCE/
 DIVE_NUMBER:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Sequential number representing a complete descent-ascent cycle of the glider
-  units: Dimensionless
+  units: "1"
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DIVE_NUMBER/
