@@ -84,8 +84,11 @@ def validate_variables_from_yaml():
             validated = validate_variable(var_name, variables)
             if validated:
                 validated_variables[var_name] = validated
+            elif var_name in ['NAV_RESOURCE', 'DIVE_NUMBER']:
+                validated_variables[var_name] = variables
+
     with open('yaml/validated_yaml/og1_variables.yaml', 'w') as f:
-        yaml.safe_dump(validated_variables, f)
+        yaml.safe_dump(validated_variables, f, allow_unicode=True)
     _log.info(f"COMPLETE check all variables, read {len(input_variables)} unique variables, wrote {len(validated_variables)} variables")
 
 if __name__ == '__main__':
