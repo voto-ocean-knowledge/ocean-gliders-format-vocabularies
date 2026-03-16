@@ -92,6 +92,14 @@ ED490:
   standard_name: downwelling_spherical_irradiance_in_sea_water
   units: W m-2 nm-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
+ED532:
+  average_method: geometric mean
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: The vertical component of light at 532nm wavelength travelling downwards
+  observation_type: measured
+  standard_name: downwelling_spherical_irradiance_in_sea_water
+  units: W m-2 nm-1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED532/
 EPSIFY01:
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume of the water body by turbulence profiler
     shear sensor
@@ -102,6 +110,11 @@ EPSIFY02:
     shear sensor
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY02/
   units: Watts per cubic metre
+FDOM:
+  long_name: Concentration of coloured dissolved organic matter expressed as quinine sulphate equivalent (FDOM) in seawater
+  standard_name: concentration_of_colored_dissolved_organic_matter_in_sea_water_expressed_as_equivalent_mass_fraction_of_quinine_sulfate_dihydrate
+  units: Parts per billion
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FDOM/
 FLUOCDOM:
   long_name: Raw fluorescence from coloured dissolved organic matter sensor
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCDOM/
@@ -111,11 +124,19 @@ FLUOCHLA:
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
   units: "1"
+FLUOPHYC:
+  long_name: Phycoerythrin signal from fluorescence sensor
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOPHYC/
+  units: "1"
 HEADING:
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform {heading} by compass
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/HEADING/
   standard_name: platform_orientation
   units: Degrees
+PHYC:
+  long_name: Concentration of phycoerythrin by fluorometer
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYC/
+  units: mg m-3
 PHYCOCYANIN:
   long_name: Phycocyanin concentration per unit volume of fresh or salt water.
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYCOCYANIN/

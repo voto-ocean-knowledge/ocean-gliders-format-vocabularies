@@ -105,7 +105,7 @@ DPAR:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Downwelling photosynthetic available radiation
   observation_type: measured
-  units: microMoleQuanta m-2 s-1
+  units: μE cm-2 s-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DPAR/
 ED380:
   average_method: geometric mean
@@ -123,6 +123,14 @@ ED490:
   standard_name: downwelling_spherical_irradiance_in_sea_water
   units: W m-2 nm-1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED490/
+ED532:
+  average_method: geometric mean
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: The vertical component of light at 532nm wavelength travelling downwards
+  observation_type: measured
+  standard_name: downwelling_spherical_irradiance_in_sea_water
+  units: W m-2 nm-1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/ED532/
 EPSIFY01:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Log10 turbulent kinetic energy dissipation {epsilon} per unit volume
@@ -135,6 +143,13 @@ EPSIFY02:
     of the water body by turbulence profiler shear sensor
   units: Watts per cubic metre
   vocabulary: http://vocab.nerc.ac.uk/collection/P01/current/EPSIFY02/
+FDOM:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Concentration of coloured dissolved organic matter expressed as quinine
+    sulphate equivalent (FDOM) in seawater
+  standard_name: concentration_of_colored_dissolved_organic_matter_in_sea_water_expressed_as_equivalent_mass_fraction_of_quinine_sulfate_dihydrate
+  units: Parts per billion
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FDOM/
 FLUOCDOM:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Raw fluorescence from coloured dissolved organic matter sensor
@@ -145,6 +160,11 @@ FLUOCHLA:
   long_name: Raw signal (counts) of instrument output by in-situ chlorophyll fluorometer
   units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOCHLA/
+FLUOPHYC:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Phycoerythrin signal from fluorescence sensor
+  units: '1'
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/FLUOPHYC/
 HEADING:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Orientation (horizontal relative to magnetic north) of measurement platform
@@ -175,6 +195,11 @@ NAV_RESOURCE:
   long_name: Navigation state of SeaExplorer glider
   units: '1'
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/NAV_RESOURCE/
+PHYC:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Concentration of phycoerythrin by fluorometer
+  units: mg m-3
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/PHYC/
 PHYCOCYANIN:
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: Phycocyanin concentration per unit volume of fresh or salt water.
