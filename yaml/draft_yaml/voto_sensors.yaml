@@ -62,12 +62,12 @@ Nortek Glider1000 AD2CP Acoustic Doppler Current Profiler:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1774/
   sensor_type: ADVs and turbulence probes
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/384/
-Biospherical PAR sensor (UnSpec model):
+Biospherical Instruments MPE underwater PAR sensor:
   long_name: Biospherical PAR sensor
   sensor_maker: Biospherical Instruments
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0028/
-  sensor_model: Biospherical PAR sensor (UnSpec model)
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1254/
+  sensor_model: Biospherical Instruments MPE underwater PAR sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2272/
   sensor_type: radiometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
 WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBCD-SLC scattering fluorescence sensor:
@@ -94,12 +94,12 @@ WET Labs {Sea-Bird WETLabs} ECO Puck Triplet FLBBPC scattering fluorescence sens
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1904/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-Rockland MicroRider-1000:
+Rockland Scientific MicroRider-1000G turbulence microstructure profiler:
   long_name: Rockland MicroRider-1000
   sensor_maker: Rockland Scientific
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0022/
-  sensor_model: Rockland MicroRider-1000
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1232/
+  sensor_model: Rockland Scientific MicroRider-1000G turbulence microstructure profiler
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2265/
   sensor_type: microstructure sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/184/
 RBR tridente scattering fluorescence sensor:

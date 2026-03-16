@@ -1,9 +1,9 @@
-Biospherical Instruments PAR sensor (unspecified model):
-  long_name: Biospherical Instruments PAR sensor (unspecified model)
+Biospherical Instruments MPE underwater PAR sensor:
+  long_name: Biospherical Instruments MPE underwater PAR sensor
   sensor_maker: Biospherical Instruments
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0028/
-  sensor_model: Biospherical Instruments PAR sensor (unspecified model)
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1254/
+  sensor_model: Biospherical Instruments MPE underwater PAR sensor
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2272/
   sensor_type: radiometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/122/
 Franatech METS Methane Sensor:
@@ -54,12 +54,12 @@ RBR tridente scattering fluorescence sensor:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2149/
   sensor_type: fluorometers
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/113/
-Rockland Scientific MicroRider-1000 turbulence microstructure profiler:
-  long_name: Rockland Scientific MicroRider-1000 turbulence microstructure profiler
+Rockland Scientific MicroRider-1000G turbulence microstructure profiler:
+  long_name: Rockland Scientific MicroRider-1000G turbulence microstructure profiler
   sensor_maker: Rockland Scientific
   sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0022/
-  sensor_model: Rockland Scientific MicroRider-1000 turbulence microstructure profiler
-  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1232/
+  sensor_model: Rockland Scientific MicroRider-1000G turbulence microstructure profiler
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2265/
   sensor_type: microstructure sensors
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/184/
 Satlantic {Sea-Bird} OCR-504 multispectral radiometer:
