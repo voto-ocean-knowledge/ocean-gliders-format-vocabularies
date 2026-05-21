@@ -46,6 +46,14 @@ RBR Legato3 CTD:
   sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL1745/
   sensor_type: CTD
   sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
+RBR Legato4 CTD:
+  long_name: RBR Legato4 CTD
+  sensor_maker: RBR
+  sensor_maker_vocabulary: http://vocab.nerc.ac.uk/collection/L35/current/MAN0049/
+  sensor_model: RBR Legato4 CTD
+  sensor_model_vocabulary: http://vocab.nerc.ac.uk/collection/L22/current/TOOL2261/
+  sensor_type: CTD
+  sensor_type_vocabulary: http://vocab.nerc.ac.uk/collection/L05/current/130/
 RBR tridente scattering fluorescence sensor:
   long_name: RBR tridente scattering fluorescence sensor
   sensor_maker: RBR
