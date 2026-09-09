@@ -61,7 +61,7 @@ CNDC:
   long_name: Electrical conductivity of the water body by CTD
   observation_type: measured
   standard_name: sea_water_electrical_conductivity
-  units: S m-1
+  units: mS cm-1
   valid_max: 85.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
