@@ -84,7 +84,7 @@ def validate_variables_from_yaml():
             validated = validate_variable(var_name, variables)
             if validated:
                 validated_variables[var_name] = validated
-            elif var_name in ['NAV_RESOURCE', 'DIVE_NUMBER']:
+            elif var_name in ['NAV_RESOURCE', 'DIVE_NUMBER', 'DEAD_RECKONING']:
                 validated_variables[var_name] = variables
 
     with open('yaml/validated_yaml/og1_variables.yaml', 'w') as f:

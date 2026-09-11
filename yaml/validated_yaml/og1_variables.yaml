@@ -65,6 +65,14 @@ CNDC:
   valid_max: 85.0
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
+DEAD_RECKONING:
+  coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
+  long_name: Dead reckoning. 1 when platform lon and lat are derived from dead reckoning.
+  observation_type: measured
+  units: '1'
+  valid_max: 0
+  valid_min: 1
+  vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DEAD_RECKON/
 DENSITY:
   comment: raw, uncorrected salinity
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
