@@ -56,7 +56,6 @@ CNDC:
   valid_min: 0.0
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/CNDC/
 DENSITY:
-  comment: raw, uncorrected salinity
   long_name: The mass of a unit volume of any body of fresh or salt water
   observation_type: calculated
   sources: salinity temperature pressure

@@ -74,7 +74,6 @@ DEAD_RECKONING:
   valid_min: 1
   vocabulary: http://vocab.nerc.ac.uk/collection/OG1/current/DEAD_RECKON/
 DENSITY:
-  comment: raw, uncorrected salinity
   coordinates: TIME, LONGITUDE, LATITUDE, DEPTH
   long_name: The mass of a unit volume of any body of fresh or salt water
   observation_type: calculated
